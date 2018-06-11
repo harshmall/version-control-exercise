@@ -43,8 +43,8 @@ products = [
 #print(len(products))
 
 #5. Print the name of each product
-for product in products:
-    print (product["name"])
+#for product in products:
+    #print (product["name"])
 
 #product_count_message = "THERE ARE " + str(len(products)) + " PRODUCTS:"
 #
@@ -55,11 +55,14 @@ for product in products:
 ##for product in products:
 ##    print(" + " + product["name"])
 #
-#def sort_by_name(product):
-#   return product["name"]
+def sort_by_name(product):
+   return product["name"]
 #
-##6. Print in alphabetical order the name of each product.
-#products = sorted(products, key=sort_by_name)
+#6. Print in alphabetical order the name of each product.
+products = sorted(products, key=sort_by_name)
+for product in products:
+    print (product["name"])
+
 #
 ##7. Print in alphabetical order the name of each product, and include its price rounded to two decimal places.
 #for product in products:
