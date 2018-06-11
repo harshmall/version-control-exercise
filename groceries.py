@@ -28,10 +28,10 @@ products = [
 #
 #1. Print all products (already done for you!).
 
-print(products) 
+#print(products)
 
 #2. Print the first product.
-# print (products[0])
+print (products[0])
 
 #3. Print the name of the first product.
 # print (products[0]["name"])
