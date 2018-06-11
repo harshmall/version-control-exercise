@@ -60,14 +60,12 @@ def sort_by_name(product):
 #
 #6. Print in alphabetical order the name of each product.
 products = sorted(products, key=sort_by_name)
-for product in products:
-    print (product["name"])
 
 #
 ##7. Print in alphabetical order the name of each product, and include its price rounded to two decimal places.
-#for product in products:
-#    price_usd = '${0:.2f}'.format(product["price"])
-#    print(" + " + product["name"] + " " + "("  + price_usd + ")")
+for product in products:
+    price_usd = '${0:.2f}'.format(product["price"])
+    print(" + " + product["name"] + " " + "("  + price_usd + ")")
 #
 #-------------------
 #-------------------
