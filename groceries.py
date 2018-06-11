@@ -31,16 +31,16 @@ products = [
 #print(products)
 
 #2. Print the first product.
-print (products[0])
+#print (products[0])
 
 #3. Print the name of the first product.
-# print (products[0]["name"])
+#print (products[0]["name"])
 
-# first_product = products[0]
-# print(first_product["name"])
+#first_product = products[0]
+#print(first_product["name"])
 
 #4. Print the number of products.
-# print(len(products))
+print(len(products))
 
 #5. Print the name of each product
 # for product in products:
