@@ -55,37 +55,37 @@ products = [
 ##for product in products:
 ##    print(" + " + product["name"])
 #
-def sort_by_name(product):
-   return product["name"]
+#def sort_by_name(product):
+#   return product["name"]
 #
 #6. Print in alphabetical order the name of each product.
-products = sorted(products, key=sort_by_name)
-
+#products = sorted(products, key=sort_by_name)
 #
-##7. Print in alphabetical order the name of each product, and include its price rounded to two decimal places.
-for product in products:
-    price_usd = '${0:.2f}'.format(product["price"])
-    print(" + " + product["name"] + " " + "("  + price_usd + ")")
+##
+###7. Print in alphabetical order the name of each product, and include its price rounded to two decimal places.
+#for product in products:
+#    price_usd = '${0:.2f}'.format(product["price"])
+#    print(" + " + product["name"] + " " + "("  + price_usd + ")")
 #
 #-------------------
 #-------------------
 
 #8. Print the number of unique departments.
 
-#departments =[] #create new empty list called departments
+departments =[] #create new empty list called departments
 #
-#for product in products:
-#    departments.append(product["department"]) #call on any list to add a new item to the list
+for product in products:
+    departments.append(product["department"]) #call on any list to add a new item to the list
 #
-#departments = list(set(departments)) #remove duplicates from the list 'departments'
+departments = list(set(departments)) #remove duplicates from the list 'departments'
 #
-#departments.sort() #sorting by alphabetical order
+departments.sort() #sorting by alphabetical order
 #
-#department_count_message = " THERE ARE " + str(len(departments)) + " DEPARTMENTS:"
+department_count_message = " THERE ARE " + str(len(departments)) + " DEPARTMENTS:"
 #
-#print("--------------")
-#print(department_count_message)
-#print("--------------")
+print("--------------")
+print(department_count_message)
+print("--------------")
 #
 #def products_belonging_to(dept_name):
 #    return [product for prodt in products if product["department"] == dept_name]
