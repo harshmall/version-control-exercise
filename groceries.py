@@ -87,34 +87,27 @@ print("--------------")
 print(department_count_message)
 print("--------------")
 #
-#def products_belonging_to(dept_name):
-#    return [product for prodt in products if product["department"] == dept_name]
-#    #for product in products:
-#    #        if product["department"] == dept_name:
-#    #            new_products.append(product)
-#    #return new_products # TODO: look up all products belonging to the department
-#
-#for department in departments:
-#    associated_products = products_belonging_to(department)
-#    label = "products"
-#    if len(associated_products) == 1:
-#        label = "product"
-#    print(" + " + department.title() + " (" + str(len(associated_products)) + " " + label + ")")
-
-
-
-    #count = 0
+def products_belonging_to(dept_name):
+    return [product for product in products if product["department"] == dept_name]
     #for product in products:
-    #    if (product["department"]==department):
-    #        count = count+1
-    #if(count==1):
-    #    print(" + "+department.title()+" ("+str(count)+" product)")
-    #else:
-    #    print(" + "+department.title()+" ("+str(count)+" products)")
+    #    if product["department"] == dept_name:
+    #        new_products.append(product)
+    #return new_products # TODO: look up all products belonging to the department
+
+for department in departments:
+    associated_products = products_belonging_to(department)
+    label = "products"
+    if len(associated_products) == 1:
+        label = "product"
+    print(" + " + department.title() + " (" + str(len(associated_products)) + " " + label + ")")
 
 
-#9. Print the name of each unique department.
-#list(set(department))
 
-    #Print in alphabetical order the name of each unique department.
-    #Print in alphabetical order the name of each unique department, as well as the number of products associated with that department.
+#    count = 0
+#    for product in products:
+#        if (product["department"]==department):
+#            count = count+1
+#    if(count==1):
+#        print(" + "+department.title()+" ("+str(count)+" product)")
+#    else:
+#        print(" + "+department.title()+" ("+str(count)+" products)")
