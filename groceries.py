@@ -40,11 +40,11 @@ products = [
 #print(first_product["name"])
 
 #4. Print the number of products.
-print(len(products))
+#print(len(products))
 
 #5. Print the name of each product
-# for product in products:
-    # print (product["name"])
+for product in products:
+    print (product["name"])
 
 #product_count_message = "THERE ARE " + str(len(products)) + " PRODUCTS:"
 #
